@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>DHS Account Assistant / Junior Assistant — Interactive Quiz (100 Qs)</title>
+<style>
+  :root{ --bg:#f0f4f7; --card:#ffffff; --accent:#0b63ff; --text:#222; }
+  body{ font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--text); padding:24px; }
+  h1{ text-align:center; margin-bottom:18px; }
+  .container{ max-width:980px; margin:0 auto; }
+  .question-card{ background:var(--card); border-radius:10px; padding:14px 16px; box-shadow:0 6px 20px rgba(15,23,42,0.06); margin-bottom:12px; }
+  .qnum{ font-weight:700; margin-bottom:6px; }
+  .options label{ display:block; margin:6px 0; cursor:pointer; }
+  .result{ margin-top:8px; font-weight:700; }
+  .correct{ color: #0b8a3e; }
+  .wrong{ color:#d00000; }
+  small.hint{ display:block; margin-top:6px; color:#555; }
+  /* responsive */
+  @media (max-width:600px){ body{ padding:12px } .question-card{ padding:12px } }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>DHS Account Assistant / Junior Assistant — Interactive Quiz (100 Qs)</h1>
+
+  <!-- Q1 -->
+  <div class="question-card">
+    <div class="qnum"><b>1.</b> The Aryans came to India from:</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="A" onclick="checkAnswer('q1','B')"> A) Northern Europe</label>
+      <label><input type="radio" name="q1" value="B" onclick="checkAnswer('q1','B')"> B) Central Asia</label>
+      <label><input type="radio" name="q1" value="C" onclick="checkAnswer('q1','B')"> C) South-East Asia</label>
+      <label><input type="radio" name="q1" value="D" onclick="checkAnswer('q1','B')"> D) North-East Africa</label>
+    </div>
+    <div id="result-q1" class="result"></div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="question-card">
+    <div class="qnum"><b>2.</b> Tripitakas are the sacred books of which of the following religions?</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="A" onclick="checkAnswer('q2','B')"> A) Jainism</label>
+      <label><input type="radio" name="q2" value="B" onclick="checkAnswer('q2','B')"> B) Buddhism</label>
+      <label><input type="radio" name="q2" value="C" onclick="checkAnswer('q2','B')"> C) Hinduism</label>
+      <label><input type="radio" name="q2" value="D" onclick="checkAnswer('q2','B')"> D) Zoroastrianism</label>
+    </div>
+    <div id="result-q2" class="result"></div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="question-card">
+    <div class="qnum"><b>3.</b> Who is called the Napoleon of Ancient India?</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="A" onclick="checkAnswer('q3','D')"> A) Chandragupta Maurya</label>
+      <label><input type="radio" name="q3" value="B" onclick="checkAnswer('q3','D')"> B) Pushyamitra</label>
+      <label><input type="radio" name="q3" value="C" onclick="checkAnswer('q3','D')"> C) Kanishka</label>
+      <label><input type="radio" name="q3" value="D" onclick="checkAnswer('q3','D')"> D) Samudragupta</label>
+    </div>
+    <div id="result-q3" class="result"></div>
+  </div>
+
+  <!-- Q4 -->
+  <div class="question-card">
+    <div class="qnum"><b>4.</b> King Porus was defeated by Alexander the Great in the Battle of:</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="A" onclick="checkAnswer('q4','D')"> A) Buxar</label>
+      <label><input type="radio" name="q4" value="B" onclick="checkAnswer('q4','D')"> B) Herat</label>
+      <label><input type="radio" name="q4" value="C" onclick="checkAnswer('q4','D')"> C) Kabul</label>
+      <label><input type="radio" name="q4" value="D" onclick="checkAnswer('q4','D')"> D) Hydaspes</label>
+    </div>
+    <div id="result-q4" class="result"></div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="question-card">
+    <div class="qnum"><b>5.</b> Who was the author of the book, Indica?</div>
+    <div class="options">
+      <label><input type="radio" name="q5" value="A" onclick="checkAnswer('q5','B')"> A) Vishnugupta</label>
+      <label><input type="radio" name="q5" value="B" onclick="checkAnswer('q5','B')"> B) Megasthenes</label>
+      <label><input type="radio" name="q5" value="C" onclick="checkAnswer('q5','B')"> C) Diamechus</label>
+      <label><input type="radio" name="q5" value="D" onclick="checkAnswer('q5','B')"> D) Harshavardhana</label>
+    </div>
+    <div id="result-q5" class="result"></div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="question-card">
+    <div class="qnum"><b>6.</b> Kautilya was the Prime Minister of which of the following Indian rulers?</div>
+    <div class="options">
+      <label><input type="radio" name="q6" value="A" onclick="checkAnswer('q6','A')"> A) Chandragupta Maurya</label>
+      <label><input type="radio" name="q6" value="B" onclick="checkAnswer('q6','A')"> B) Chandragupta I</label>
+      <label><input type="radio" name="q6" value="C" onclick="checkAnswer('q6','A')"> C) Ashoka</label>
+      <label><input type="radio" name="q6" value="D" onclick="checkAnswer('q6','A')"> D) Harshavardhana</label>
+    </div>
+    <div id="result-q6" class="result"></div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="question-card">
+    <div class="qnum"><b>7.</b> Who ascended the throne of Delhi Sultanate after the death of Qutub-ud-din Aibak?</div>
+    <div class="options">
+      <label><input type="radio" name="q7" value="A" onclick="checkAnswer('q7','B')"> A) Ghiyas-ud-din Balban</label>
+      <label><input type="radio" name="q7" value="B" onclick="checkAnswer('q7','B')"> B) Iltutmish</label>
+      <label><input type="radio" name="q7" value="C" onclick="checkAnswer('q7','B')"> C) Nasir-ud-din Shah</label>
+      <label><input type="radio" name="q7" value="D" onclick="checkAnswer('q7','B')"> D) Raziya Sultana</label>
+    </div>
+    <div id="result-q7" class="result"></div>
+  </div>
+
+  <!-- Q8 -->
+  <div class="question-card">
+    <div class="qnum"><b>8.</b> Who wrote the book, Ramcharitamanas?</div>
+    <div class="options">
+      <label><input type="radio" name="q8" value="A" onclick="checkAnswer('q8','C')"> A) Kabir</label>
+      <label><input type="radio" name="q8" value="B" onclick="checkAnswer('q8','C')"> B) Ramdas</label>
+      <label><input type="radio" name="q8" value="C" onclick="checkAnswer('q8','C')"> C) Tulsidas</label>
+      <label><input type="radio" name="q8" value="D" onclick="checkAnswer('q8','C')"> D) Sankaracharya</label>
+    </div>
+    <div id="result-q8" class="result"></div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="question-card">
+    <div class="qnum"><b>9.</b> Which Mughal emperor founded his own religion, Din-i-Ilahi?</div>
+    <div class="options">
+      <label><input type="radio" name="q9" value="A" onclick="checkAnswer('q9','B')"> A) Humayun</label>
+      <label><input type="radio" name="q9" value="B" onclick="checkAnswer('q9','B')"> B) Akbar</label>
+      <label><input type="radio" name="q9" value="C" onclick="checkAnswer('q9','B')"> C) Jahangir</label>
+      <label><input type="radio" name="q9" value="D" onclick="checkAnswer('q9','B')"> D) Aurangzeb</label>
+    </div>
+    <div id="result-q9" class="result"></div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="question-card">
+    <div class="qnum"><b>10.</b> The Quit India Movement was launched in the year:</div>
+    <div class="options">
+      <label><input type="radio" name="q10" value="A" onclick="checkAnswer('q10','D')"> A) 1924</label>
+      <label><input type="radio" name="q10" value="B" onclick="checkAnswer('q10','D')"> B) 1934</label>
+      <label><input type="radio" name="q10" value="C" onclick="checkAnswer('q10','D')"> C) 1947</label>
+      <label><input type="radio" name="q10" value="D" onclick="checkAnswer('q10','D')"> D) 1942</label>
+    </div>
+    <div id="result-q10" class="result"></div>
+  </div>
+
+  <!-- Q11 -->
+  <div class="question-card">
+    <div class="qnum"><b>11.</b> 'Garba' dance is a dance from:</div>
+    <div class="options">
+      <label><input type="radio" name="q11" value="A" onclick="checkAnswer('q11','B')"> A) Rajasthan</label>
+      <label><input type="radio" name="q11" value="B" onclick="checkAnswer('q11','B')"> B) Gujarat</label>
+      <label><input type="radio" name="q11" value="C" onclick="checkAnswer('q11','B')"> C) Karnataka</label>
+      <label><input type="radio" name="q11" value="D" onclick="checkAnswer('q11','B')"> D) Maharashtra</label>
+    </div>
+    <div id="result-q11" class="result"></div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="question-card">
+    <div class="qnum"><b>12.</b> The Elephanta Cave is situated near:</div>
+    <div class="options">
+      <label><input type="radio" name="q12" value="A" onclick="checkAnswer('q12','A')"> A) Mumbai</label>
+      <label><input type="radio" name="q12" value="B" onclick="checkAnswer('q12','A')"> B) Chennai</label>
+      <label><input type="radio" name="q12" value="C" onclick="checkAnswer('q12','A')"> C) Mount Abu</label>
+      <label><input type="radio" name="q12" value="D" onclick="checkAnswer('q12','A')"> D) Amarnath</label>
+    </div>
+    <div id="result-q12" class="result"></div>
+  </div>
+
+  <!-- Q13 -->
+  <div class="question-card">
+    <div class="qnum"><b>13.</b> Which of the following was written by Kalidasa?</div>
+    <div class="options">
+      <label><input type="radio" name="q13" value="A" onclick="checkAnswer('q13','D')"> A) Sursagar</label>
+      <label><input type="radio" name="q13" value="B" onclick="checkAnswer('q13','D')"> B) Rajatarangini</label>
+      <label><input type="radio" name="q13" value="C" onclick="checkAnswer('q13','D')"> C) Kathasaritsagara</label>
+      <label><input type="radio" name="q13" value="D" onclick="checkAnswer('q13','D')"> D) Meghadutam</label>
+    </div>
+    <div id="result-q13" class="result"></div>
+  </div>
+
+  <!-- Q14 -->
+  <div class="question-card">
+    <div class="qnum"><b>14.</b> The classical dance of Andhra Pradesh is:</div>
+    <div class="options">
+      <label><input type="radio" name="q14" value="A" onclick="checkAnswer('q14','B')"> A) Kathakali</label>
+      <label><input type="radio" name="q14" value="B" onclick="checkAnswer('q14','B')"> B) Kuchipudi</label>
+      <label><input type="radio" name="q14" value="C" onclick="checkAnswer('q14','B')"> C) Mohiniyattam</label>
+      <label><input type="radio" name="q14" value="D" onclick="checkAnswer('q14','B')"> D) Bharatanatyam</label>
+    </div>
+    <div id="result-q14" class="result"></div>
+  </div>
+
+  <!-- Q15 -->
+  <div class="question-card">
+    <div class="qnum"><b>15.</b> The 'Desert Festival' in India is held in:</div>
+    <div class="options">
+      <label><input type="radio" name="q15" value="A" onclick="checkAnswer('q15','A')"> A) Jaisalmer</label>
+      <label><input type="radio" name="q15" value="B" onclick="checkAnswer('q15','A')"> B) Jaipur</label>
+      <label><input type="radio" name="q15" value="C" onclick="checkAnswer('q15','A')"> C) Bikaner</label>
+      <label><input type="radio" name="q15" value="D" onclick="checkAnswer('q15','A')"> D) Jodhpur</label>
+    </div>
+    <div id="result-q15" class="result"></div>
+  </div>
+
+  <!-- Q16 -->
+  <div class="question-card">
+    <div class="qnum"><b>16.</b> Which planet looks reddish in the night sky?</div>
+    <div class="options">
+      <label><input type="radio" name="q16" value="A" onclick="checkAnswer('q16','B')"> A) Mercury</label>
+      <label><input type="radio" name="q16" value="B" onclick="checkAnswer('q16','B')"> B) Mars</label>
+      <label><input type="radio" name="q16" value="C" onclick="checkAnswer('q16','B')"> C) Jupiter</label>
+      <label><input type="radio" name="q16" value="D" onclick="checkAnswer('q16','B')"> D) Saturn</label>
+    </div>
+    <div id="result-q16" class="result"></div>
+  </div>
+
+  <!-- Q17 -->
+  <div class="question-card">
+    <div class="qnum"><b>17.</b> Which one of the following planets has the largest number of natural satellites or moons?</div>
+    <div class="options">
+      <label><input type="radio" name="q17" value="A" onclick="checkAnswer('q17','A')"> A) Jupiter</label>
+      <label><input type="radio" name="q17" value="B" onclick="checkAnswer('q17','A')"> B) Mars</label>
+      <label><input type="radio" name="q17" value="C" onclick="checkAnswer('q17','A')"> C) Saturn</label>
+      <label><input type="radio" name="q17" value="D" onclick="checkAnswer('q17','A')"> D) Venus</label>
+    </div>
+    <div id="result-q17" class="result"></div>
+  </div>
+
+  <!-- Q18 -->
+  <div class="question-card">
+    <div class="qnum"><b>18.</b> The Earth rotates on its axis from:</div>
+    <div class="options">
+      <label><input type="radio" name="q18" value="A" onclick="checkAnswer('q18','D')"> A) North to South</label>
+      <label><input type="radio" name="q18" value="B" onclick="checkAnswer('q18','D')"> B) East to West</label>
+      <label><input type="radio" name="q18" value="C" onclick="checkAnswer('q18','D')"> C) South to North</label>
+      <label><input type="radio" name="q18" value="D" onclick="checkAnswer('q18','D')"> D) West to East</label>
+    </div>
+    <div id="result-q18" class="result"></div>
+  </div>
+
+  <!-- Q19 -->
+  <div class="question-card">
+    <div class="qnum"><b>19.</b> Through which of the following countries does the equator pass?</div>
+    <div class="options">
+      <label><input type="radio" name="q19" value="A" onclick="checkAnswer('q19','B')"> A) Peru</label>
+      <label><input type="radio" name="q19" value="B" onclick="checkAnswer('q19','B')"> B) Brazil</label>
+      <label><input type="radio" name="q19" value="C" onclick="checkAnswer('q19','B')"> C) Thailand</label>
+      <label><input type="radio" name="q19" value="D" onclick="checkAnswer('q19','B')"> D) Thailand</label>
+    </div>
+    <div id="result-q19" class="result"></div>
+  </div>
+
+  <!-- Q20 -->
+  <div class="question-card">
+    <div class="qnum"><b>20.</b> Solar eclipse occurs when:</div>
+    <div class="options">
+      <label><input type="radio" name="q20" value="A" onclick="checkAnswer('q20','C')"> A) Earth comes in between Sun and Moon</label>
+      <label><input type="radio" name="q20" value="B" onclick="checkAnswer('q20','C')"> B) Moon is at right angle to Earth</label>
+      <label><input type="radio" name="q20" value="C" onclick="checkAnswer('q20','C')"> C) Moon comes between Sun and Earth</label>
+      <label><input type="radio" name="q20" value="D" onclick="checkAnswer('q20','C')"> D) Sun comes between Moon and Earth</label>
+    </div>
+    <div id="result-q20" class="result"></div>
+  </div>
+
+  <!-- Q21 -->
+  <div class="question-card">
+    <div class="qnum"><b>21.</b> The speed of rotation of the earth in kilometer per hour is the highest:</div>
+    <div class="options">
+      <label><input type="radio" name="q21" value="A" onclick="checkAnswer('q21','A')"> A) along the Equator</label>
+      <label><input type="radio" name="q21" value="B" onclick="checkAnswer('q21','A')"> B) at the North Pole</label>
+      <label><input type="radio" name="q21" value="C" onclick="checkAnswer('q21','A')"> C) along the Tropic of Cancer</label>
+      <label><input type="radio" name="q21" value="D" onclick="checkAnswer('q21','A')"> D) along the Arctic Circle</label>
+    </div>
+    <div id="result-q21" class="result"></div>
+  </div>
+
+  <!-- Q22 -->
+  <div class="question-card">
+    <div class="qnum"><b>22.</b> Which of the following is a metamorphic rock?</div>
+    <div class="options">
+      <label><input type="radio" name="q22" value="A" onclick="checkAnswer('q22','A')"> A) Slate</label>
+      <label><input type="radio" name="q22" value="B" onclick="checkAnswer('q22','A')"> B) Sandstone</label>
+      <label><input type="radio" name="q22" value="C" onclick="checkAnswer('q22','A')"> C) Shale</label>
+      <label><input type="radio" name="q22" value="D" onclick="checkAnswer('q22','A')"> D) Limestone</label>
+    </div>
+    <div id="result-q22" class="result"></div>
+  </div>
+
+  <!-- Q23 -->
+  <div class="question-card">
+    <div class="qnum"><b>23.</b> Which one of the following countries is known as 'land of thousand lakes' ?</div>
+    <div class="options">
+      <label><input type="radio" name="q23" value="A" onclick="checkAnswer('q23','C')"> A) Portugal</label>
+      <label><input type="radio" name="q23" value="B" onclick="checkAnswer('q23','C')"> B) Austria</label>
+      <label><input type="radio" name="q23" value="C" onclick="checkAnswer('q23','C')"> C) Finland</label>
+      <label><input type="radio" name="q23" value="D" onclick="checkAnswer('q23','C')"> D) Romania</label>
+    </div>
+    <div id="result-q23" class="result"></div>
+  </div>
+
+  <!-- Q24 -->
+  <div class="question-card">
+    <div class="qnum"><b>24.</b> The Strait that separates Europe from Africa is:</div>
+    <div class="options">
+      <label><input type="radio" name="q24" value="A" onclick="checkAnswer('q24','B')"> A) Hook Strait</label>
+      <label><input type="radio" name="q24" value="B" onclick="checkAnswer('q24','B')"> B) Strait of Gibraltar</label>
+      <label><input type="radio" name="q24" value="C" onclick="checkAnswer('q24','B')"> C) Paik Strait</label>
+      <label><input type="radio" name="q24" value="D" onclick="checkAnswer('q24','B')"> D) Bering Strait</label>
+    </div>
+    <div id="result-q24" class="result"></div>
+  </div>
+
+  <!-- Q25 -->
+  <div class="question-card">
+    <div class="qnum"><b>25.</b> Which is the deepest freshwater lake in the world?</div>
+    <div class="options">
+      <label><input type="radio" name="q25" value="A" onclick="checkAnswer('q25','C')"> A) Lake Tanganyika</label>
+      <label><input type="radio" name="q25" value="B" onclick="checkAnswer('q25','C')"> B) Lake Superior</label>
+      <label><input type="radio" name="q25" value="C" onclick="checkAnswer('q25','C')"> C) Lake Baikal</label>
+      <label><input type="radio" name="q25" value="D" onclick="checkAnswer('q25','C')"> D) Lake Michigan</label>
+    </div>
+    <div id="result-q25" class="result"></div>
+  </div>
+
+  <!-- Q26 -->
+  <div class="question-card">
+    <div class="qnum"><b>26.</b> Malta is located in which of the following seas?</div>
+    <div class="options">
+      <label><input type="radio" name="q26" value="A" onclick="checkAnswer('q26','B')"> A) Baltic Sea</label>
+      <label><input type="radio" name="q26" value="B" onclick="checkAnswer('q26','B')"> B) Mediterranean Sea</label>
+      <label><input type="radio" name="q26" value="C" onclick="checkAnswer('q26','B')"> C) Black Sea</label>
+      <label><input type="radio" name="q26" value="D" onclick="checkAnswer('q26','B')"> D) North Sea</label>
+    </div>
+    <div id="result-q26" class="result"></div>
+  </div>
+
+  <!-- Q27 -->
+  <div class="question-card">
+    <div class="qnum"><b>27.</b> Which of the following European countries has coastline with the Atlantic Ocean?</div>
+    <div class="options">
+      <label><input type="radio" name="q27" value="A" onclick="checkAnswer('q27','A')"> A) Portugal</label>
+      <label><input type="radio" name="q27" value="B" onclick="checkAnswer('q27','A')"> B) Italy</label>
+      <label><input type="radio" name="q27" value="C" onclick="checkAnswer('q27','A')"> C) Germany</label>
+      <label><input type="radio" name="q27" value="D" onclick="checkAnswer('q27','A')"> D) Greece</label>
+    </div>
+    <div id="result-q27" class="result"></div>
+  </div>
+
+  <!-- Q28 -->
+  <div class="question-card">
+    <div class="qnum"><b>28.</b> The world's largest coral reef is found near the coast of which of the following?</div>
+    <div class="options">
+      <label><input type="radio" name="q28" value="A" onclick="checkAnswer('q28','A')"> A) Australia</label>
+      <label><input type="radio" name="q28" value="B" onclick="checkAnswer('q28','A')"> B) Ghana</label>
+      <label><input type="radio" name="q28" value="C" onclick="checkAnswer('q28','A')"> C) Cuba</label>
+      <label><input type="radio" name="q28" value="D" onclick="checkAnswer('q28','A')"> D) Philippines</label>
+    </div>
+    <div id="result-q28" class="result"></div>
+  </div>
+
+  <!-- Q29 -->
+  <div class="question-card">
+    <div class="qnum"><b>29.</b> What is the capital of Turkey?</div>
+    <div class="options">
+      <label><input type="radio" name="q29" value="A" onclick="checkAnswer('q29','C')"> A) Amsterdam</label>
+      <label><input type="radio" name="q29" value="B" onclick="checkAnswer('q29','C')"> B) Addis Ababa</label>
+      <label><input type="radio" name="q29" value="C" onclick="checkAnswer('q29','C')"> C) Ankara</label>
+      <label><input type="radio" name="q29" value="D" onclick="checkAnswer('q29','C')"> D) Beirut</label>
+    </div>
+    <div id="result-q29" class="result"></div>
+  </div>
+
+  <!-- Q30 -->
+  <div class="question-card">
+    <div class="qnum"><b>30.</b> What is the currency of Thailand?</div>
+    <div class="options">
+      <label><input type="radio" name="q30" value="A" onclick="checkAnswer('q30','D')"> A) Kyat</label>
+      <label><input type="radio" name="q30" value="B" onclick="checkAnswer('q30','D')"> B) Dong</label>
+      <label><input type="radio" name="q30" value="C" onclick="checkAnswer('q30','D')"> C) Won</label>
+      <label><input type="radio" name="q30" value="D" onclick="checkAnswer('q30','D')"> D) Baht</label>
+    </div>
+    <div id="result-q30" class="result"></div>
+  </div>
+
+  <!-- Q31 -->
+  <div class="question-card">
+    <div class="qnum"><b>31.</b> Which of the following Indian States does not have a coastline?</div>
+    <div class="options">
+      <label><input type="radio" name="q31" value="A" onclick="checkAnswer('q31','A')"> A) Rajasthan</label>
+      <label><input type="radio" name="q31" value="B" onclick="checkAnswer('q31','A')"> B) Maharashtra</label>
+      <label><input type="radio" name="q31" value="C" onclick="checkAnswer('q31','A')"> C) Odisha</label>
+      <label><input type="radio" name="q31" value="D" onclick="checkAnswer('q31','A')"> D) Kerala</label>
+    </div>
+    <div id="result-q31" class="result"></div>
+  </div>
+
+  <!-- Q32 -->
+  <div class="question-card">
+    <div class="qnum"><b>32.</b> Which of the following Indian States forms the easternmost border of the country?</div>
+    <div class="options">
+      <label><input type="radio" name="q32" value="A" onclick="checkAnswer('q32','B')"> A) Assam</label>
+      <label><input type="radio" name="q32" value="B" onclick="checkAnswer('q32','B')"> B) Arunachal Pradesh</label>
+      <label><input type="radio" name="q32" value="C" onclick="checkAnswer('q32','B')"> C) Nagaland</label>
+      <label><input type="radio" name="q32" value="D" onclick="checkAnswer('q32','B')"> D) Manipur</label>
+    </div>
+    <div id="result-q32" class="result"></div>
+  </div>
+
+  <!-- Q33 -->
+  <div class="question-card">
+    <div class="qnum"><b>33.</b> Which of the following rivers flows from east to west?</div>
+    <div class="options">
+      <label><input type="radio" name="q33" value="A" onclick="checkAnswer('q33','A')"> A) Narmada</label>
+      <label><input type="radio" name="q33" value="B" onclick="checkAnswer('q33','A')"> B) Godavari</label>
+      <label><input type="radio" name="q33" value="C" onclick="checkAnswer('q33','A')"> C) Krishna</label>
+      <label><input type="radio" name="q33" value="D" onclick="checkAnswer('q33','A')"> D) Cauvery</label>
+    </div>
+    <div id="result-q33" class="result"></div>
+  </div>
+
+  <!-- Q34 -->
+  <div class="question-card">
+    <div class="qnum"><b>34.</b> Under which Article of the Constitution is the President's rule promulgated in any State in India?</div>
+    <div class="options">
+      <label><input type="radio" name="q34" value="A" onclick="checkAnswer('q34','A')"> A) Article 356</label>
+      <label><input type="radio" name="q34" value="B" onclick="checkAnswer('q34','A')"> B) Article 352</label>
+      <label><input type="radio" name="q34" value="C" onclick="checkAnswer('q34','A')"> C) Article 360</label>
+      <label><input type="radio" name="q34" value="D" onclick="checkAnswer('q34','A')"> D) Article 370</label>
+    </div>
+    <div id="result-q34" class="result"></div>
+  </div>
+
+  <!-- Q35 -->
+  <div class="question-card">
+    <div class="qnum"><b>35.</b> POCSO Act is related to</div>
+    <div class="options">
+      <label><input type="radio" name="q35" value="A" onclick="checkAnswer('q35','B')"> A) oil companies</label>
+      <label><input type="radio" name="q35" value="B" onclick="checkAnswer('q35','B')"> B) children</label>
+      <label><input type="radio" name="q35" value="C" onclick="checkAnswer('q35','B')"> C) civil servants</label>
+      <label><input type="radio" name="q35" value="D" onclick="checkAnswer('q35','B')"> D) ocean</label>
+    </div>
+    <div id="result-q35" class="result"></div>
+  </div>
+
+  <!-- Q36 -->
+  <div class="question-card">
+    <div class="qnum"><b>36.</b> Two atoms are said to be isotopes if</div>
+    <div class="options">
+      <label><input type="radio" name="q36" value="A" onclick="checkAnswer('q36','A')"> A) they have the same atomic number but different mass numbers</label>
+      <label><input type="radio" name="q36" value="B" onclick="checkAnswer('q36','A')"> B) they have the same number of neutrons but different mass numbers</label>
+      <label><input type="radio" name="q36" value="C" onclick="checkAnswer('q36','A')"> C) they have the same number of protons and neutrons</label>
+      <label><input type="radio" name="q36" value="D" onclick="checkAnswer('q36','A')"> D) they have same number of neutrons but different numbers of protons</label>
+    </div>
+    <div id="result-q36" class="result"></div>
+  </div>
+
+  <!-- Q37 -->
+  <div class="question-card">
+    <div class="qnum"><b>37.</b> The loudness of sound is related to</div>
+    <div class="options">
+      <label><input type="radio" name="q37" value="A" onclick="checkAnswer('q37','B')"> A) its frequency</label>
+      <label><input type="radio" name="q37" value="B" onclick="checkAnswer('q37','B')"> B) its amplitude</label>
+      <label><input type="radio" name="q37" value="C" onclick="checkAnswer('q37','B')"> C) its speed</label>
+      <label><input type="radio" name="q37" value="D" onclick="checkAnswer('q37','B')"> D) its pitch</label>
+    </div>
+    <div id="result-q37" class="result"></div>
+  </div>
+
+  <!-- Q38 -->
+  <div class="question-card">
+    <div class="qnum"><b>38.</b> The phenomenon of 'total internal reflection' is observed in which of the following?</div>
+    <div class="options">
+      <label><input type="radio" name="q38" value="A" onclick="checkAnswer('q38','C')"> A) Glowing tube light</label>
+      <label><input type="radio" name="q38" value="B" onclick="checkAnswer('q38','C')"> B) Light passing through lens</label>
+      <label><input type="radio" name="q38" value="C" onclick="checkAnswer('q38','C')"> C) Sparkling diamond</label>
+      <label><input type="radio" name="q38" value="D" onclick="checkAnswer('q38','C')"> D) Twinkling star</label>
+    </div>
+    <div id="result-q38" class="result"></div>
+  </div>
+
+  <!-- Q39 -->
+  <div class="question-card">
+    <div class="qnum"><b>39.</b> Electricity is produced in a dry cell through conversion of energy from</div>
+    <div class="options">
+      <label><input type="radio" name="q39" value="A" onclick="checkAnswer('q39','A')"> A) chemical</label>
+      <label><input type="radio" name="q39" value="B" onclick="checkAnswer('q39','A')"> B) thermal energy</label>
+      <label><input type="radio" name="q39" value="C" onclick="checkAnswer('q39','A')"> C) mechanical energy</label>
+      <label><input type="radio" name="q39" value="D" onclick="checkAnswer('q39','A')"> D) nuclear energy</label>
+    </div>
+    <div id="result-q39" class="result"></div>
+  </div>
+
+  <!-- Q40 -->
+  <div class="question-card">
+    <div class="qnum"><b>40.</b> The main constituent of vinegar is</div>
+    <div class="options">
+      <label><input type="radio" name="q40" value="A" onclick="checkAnswer('q40','A')"> A) acetic acid</label>
+      <label><input type="radio" name="q40" value="B" onclick="checkAnswer('q40','A')"> B) ascorbic acid</label>
+      <label><input type="radio" name="q40" value="C" onclick="checkAnswer('q40','A')"> C) citric acid</label>
+      <label><input type="radio" name="q40" value="D" onclick="checkAnswer('q40','A')"> D) tartaric acid</label>
+    </div>
+    <div id="result-q40" class="result"></div>
+  </div>
+
+  <!-- Q41 -->
+  <div class="question-card">
+    <div class="qnum"><b>41.</b> Non-stick cooking utensils are coated with</div>
+    <div class="options">
+      <label><input type="radio" name="q41" value="A" onclick="checkAnswer('q41','B')"> A) black paint</label>
+      <label><input type="radio" name="q41" value="B" onclick="checkAnswer('q41','B')"> B) PVC / Teflon</label>
+      <label><input type="radio" name="q41" value="C" onclick="checkAnswer('q41','B')"> C) polystyrene</label>
+      <label><input type="radio" name="q41" value="D" onclick="checkAnswer('q41','B')"> D) none of the above</label>
+    </div>
+    <div id="result-q41" class="result"></div>
+  </div>
+
+  <!-- Q42 -->
+  <div class="question-card">
+    <div class="qnum"><b>42.</b> Which of the following elements is found in all organic compounds?</div>
+    <div class="options">
+      <label><input type="radio" name="q42" value="A" onclick="checkAnswer('q42','A')"> A) Carbon</label>
+      <label><input type="radio" name="q42" value="B" onclick="checkAnswer('q42','A')"> B) Calcium</label>
+      <label><input type="radio" name="q42" value="C" onclick="checkAnswer('q42','A')"> C) Nitrogen</label>
+      <label><input type="radio" name="q42" value="D" onclick="checkAnswer('q42','A')"> D) Oxygen</label>
+    </div>
+    <div id="result-q42" class="result"></div>
+  </div>
+
+  <!-- Q43 -->
+  <div class="question-card">
+    <div class="qnum"><b>43.</b> Which of the following acids is a mineral acid?</div>
+    <div class="options">
+      <label><input type="radio" name="q43" value="A" onclick="checkAnswer('q43','B')"> A) Citric acid</label>
+      <label><input type="radio" name="q43" value="B" onclick="checkAnswer('q43','B')"> B) Hydrochloric acid</label>
+      <label><input type="radio" name="q43" value="C" onclick="checkAnswer('q43','B')"> C) Ascorbic acid</label>
+      <label><input type="radio" name="q43" value="D" onclick="checkAnswer('q43','B')"> D) Tartaric acid</label>
+    </div>
+    <div id="result-q43" class="result"></div>
+  </div>
+
+  <!-- Q44 -->
+  <div class="question-card">
+    <div class="qnum"><b>44.</b> Which among the following is an example of chemical change?</div>
+    <div class="options">
+      <label><input type="radio" name="q44" value="A" onclick="checkAnswer('q44','C')"> A) The melting of an ice cube</label>
+      <label><input type="radio" name="q44" value="B" onclick="checkAnswer('q44','C')"> B) The boiling of water</label>
+      <label><input type="radio" name="q44" value="C" onclick="checkAnswer('q44','C')"> C) Rusting of iron utensils</label>
+      <label><input type="radio" name="q44" value="D" onclick="checkAnswer('q44','C')"> D) Attraction of iron nail to a magnet</label>
+    </div>
+    <div id="result-q44" class="result"></div>
+  </div>
+
+  <!-- Q45 -->
+  <div class="question-card">
+    <div class="qnum"><b>45.</b> Which of the following is the lightest metal?</div>
+    <div class="options">
+      <label><input type="radio" name="q45" value="A" onclick="checkAnswer('q45','C')"> A) Mercury</label>
+      <label><input type="radio" name="q45" value="B" onclick="checkAnswer('q45','C')"> B) Sodium</label>
+      <label><input type="radio" name="q45" value="C" onclick="checkAnswer('q45','C')"> C) Lithium</label>
+      <label><input type="radio" name="q45" value="D" onclick="checkAnswer('q45','C')"> D) Cadmium</label>
+    </div>
+    <div id="result-q45" class="result"></div>
+  </div>
+
+  <!-- Q46 -->
+  <div class="question-card">
+    <div class="qnum"><b>46.</b> Scurvy is caused by deficiency in</div>
+    <div class="options">
+      <label><input type="radio" name="q46" value="A" onclick="checkAnswer('q46','C')"> A) vitamin A</label>
+      <label><input type="radio" name="q46" value="B" onclick="checkAnswer('q46','C')"> B) vitamin B1</label>
+      <label><input type="radio" name="q46" value="C" onclick="checkAnswer('q46','C')"> C) vitamin C</label>
+      <label><input type="radio" name="q46" value="D" onclick="checkAnswer('q46','C')"> D) vitamin D3</label>
+    </div>
+    <div id="result-q46" class="result"></div>
+  </div>
+
+  <!-- Q47 -->
+  <div class="question-card">
+    <div class="qnum"><b>47.</b> Which of the following glands produces growth hormone in human?</div>
+    <div class="options">
+      <label><input type="radio" name="q47" value="A" onclick="checkAnswer('q47','C')"> A) Adrenal gland</label>
+      <label><input type="radio" name="q47" value="B" onclick="checkAnswer('q47','C')"> B) Pancreas</label>
+      <label><input type="radio" name="q47" value="C" onclick="checkAnswer('q47','C')"> C) Pituitary gland</label>
+      <label><input type="radio" name="q47" value="D" onclick="checkAnswer('q47','C')"> D) Thyroid gland</label>
+    </div>
+    <div id="result-q47" class="result"></div>
+  </div>
+
+  <!-- Q48 -->
+  <div class="question-card">
+    <div class="qnum"><b>48.</b> Which of the following diseases is caused by bacteria?</div>
+    <div class="options">
+      <label><input type="radio" name="q48" value="A" onclick="checkAnswer('q48','D')"> A) Hepatitis B</label>
+      <label><input type="radio" name="q48" value="B" onclick="checkAnswer('q48','D')"> B) Poliomyelitis</label>
+      <label><input type="radio" name="q48" value="C" onclick="checkAnswer('q48','D')"> C) Scabies</label>
+      <label><input type="radio" name="q48" value="D" onclick="checkAnswer('q48','D')"> D) Tuberculosis</label>
+    </div>
+    <div id="result-q48" class="result"></div>
+  </div>
+
+  <!-- Q49 -->
+  <div class="question-card">
+    <div class="qnum"><b>49.</b> Which of the following diseases is also known as 'breakbone fever'?</div>
+    <div class="options">
+      <label><input type="radio" name="q49" value="A" onclick="checkAnswer('q49','D')"> A) Typhoid</label>
+      <label><input type="radio" name="q49" value="B" onclick="checkAnswer('q49','D')"> B) Rhinitis</label>
+      <label><input type="radio" name="q49" value="C" onclick="checkAnswer('q49','D')"> C) Yellow fever</label>
+      <label><input type="radio" name="q49" value="D" onclick="checkAnswer('q49','D')"> D) Dengue</label>
+    </div>
+    <div id="result-q49" class="result"></div>
+  </div>
+
+  <!-- Q50 -->
+  <div class="question-card">
+    <div class="qnum"><b>50.</b> The site for cellular respiration in animal cell is</div>
+    <div class="options">
+      <label><input type="radio" name="q50" value="A" onclick="checkAnswer('q50','B')"> A) Ribosome</label>
+      <label><input type="radio" name="q50" value="B" onclick="checkAnswer('q50','B')"> B) Mitochondria</label>
+      <label><input type="radio" name="q50" value="C" onclick="checkAnswer('q50','B')"> C) Endoplasmic reticulum</label>
+      <label><input type="radio" name="q50" value="D" onclick="checkAnswer('q50','B')"> D) Lysosome</label>
+    </div>
+    <div id="result-q50" class="result"></div>
+  </div>
+
+  <!-- Q51 -->
+  <div class="question-card">
+    <div class="qnum"><b>51.</b> What is the synonym of 'Occupation'?</div>
+    <div class="options">
+      <label><input type="radio" name="q51" value="A" onclick="checkAnswer('q51','B')"> A) Space</label>
+      <label><input type="radio" name="q51" value="B" onclick="checkAnswer('q51','B')"> B) Job</label>
+      <label><input type="radio" name="q51" value="C" onclick="checkAnswer('q51','B')"> C) Village</label>
+      <label><input type="radio" name="q51" value="D" onclick="checkAnswer('q51','B')"> D) Plantation</label>
+    </div>
+    <div id="result-q51" class="result"></div>
+  </div>
+
+  <!-- Q52 -->
+  <div class="question-card">
+    <div class="qnum"><b>52.</b> What is the antonym of 'Cautious'?</div>
+    <div class="options">
+      <label><input type="radio" name="q52" value="A" onclick="checkAnswer('q52','B')"> A) Sacred</label>
+      <label><input type="radio" name="q52" value="B" onclick="checkAnswer('q52','B')"> B) Careless</label>
+      <label><input type="radio" name="q52" value="C" onclick="checkAnswer('q52','B')"> C) Terrible</label>
+      <label><input type="radio" name="q52" value="D" onclick="checkAnswer('q52','B')"> D) Frightening</label>
+    </div>
+    <div id="result-q52" class="result"></div>
+  </div>
+
+  <!-- Q53 -->
+  <div class="question-card">
+    <div class="qnum"><b>53.</b> Which of the following is not a collective noun?</div>
+    <div class="options">
+      <label><input type="radio" name="q53" value="A" onclick="checkAnswer('q53','C')"> A) Jury</label>
+      <label><input type="radio" name="q53" value="B" onclick="checkAnswer('q53','C')"> B) Parliament</label>
+      <label><input type="radio" name="q53" value="C" onclick="checkAnswer('q53','C')"> C) Nation</label>
+      <label><input type="radio" name="q53" value="D" onclick="checkAnswer('q53','C')"> D) Police</label>
+    </div>
+    <div id="result-q53" class="result"></div>
+  </div>
+
+  <!-- Q54 -->
+  <div class="question-card">
+    <div class="qnum"><b>54.</b> Which abstract noun is formed from the verb 'obey'?</div>
+    <div class="options">
+      <label><input type="radio" name="q54" value="A" onclick="checkAnswer('q54','A')"> A) Obedience</label>
+      <label><input type="radio" name="q54" value="B" onclick="checkAnswer('q54','A')"> B) Obeyence</label>
+      <label><input type="radio" name="q54" value="C" onclick="checkAnswer('q54','A')"> C) Obedity</label>
+      <label><input type="radio" name="q54" value="D" onclick="checkAnswer('q54','A')"> D) Observance</label>
+    </div>
+    <div id="result-q54" class="result"></div>
+  </div>
+
+  <!-- Q55 -->
+  <div class="question-card">
+    <div class="qnum"><b>55.</b> What is the female gender of hero?</div>
+    <div class="options">
+      <label><input type="radio" name="q55" value="A" onclick="checkAnswer('q55','C')"> A) Heroism</label>
+      <label><input type="radio" name="q55" value="B" onclick="checkAnswer('q55','C')"> B) Heroin</label>
+      <label><input type="radio" name="q55" value="C" onclick="checkAnswer('q55','C')"> C) Heroine</label>
+      <label><input type="radio" name="q55" value="D" onclick="checkAnswer('q55','C')"> D) Heron</label>
+    </div>
+    <div id="result-q55" class="result"></div>
+  </div>
+
+  <!-- Q56 -->
+  <div class="question-card">
+    <div class="qnum"><b>56.</b> What is the plural of 'handkerchief'?</div>
+    <div class="options">
+      <label><input type="radio" name="q56" value="A" onclick="checkAnswer('q56','C')"> A) Handkercheives</label>
+      <label><input type="radio" name="q56" value="B" onclick="checkAnswer('q56','C')"> B) Handkerchiefes</label>
+      <label><input type="radio" name="q56" value="C" onclick="checkAnswer('q56','C')"> C) Handkerchiefs</label>
+      <label><input type="radio" name="q56" value="D" onclick="checkAnswer('q56','C')"> D) Handkercheifs</label>
+    </div>
+    <div id="result-q56" class="result"></div>
+  </div>
+
+  <!-- Q57 -->
+  <div class="question-card">
+    <div class="qnum"><b>57.</b> Use the correct adjective to fill up: "Suddenly there arose a ______ storm."</div>
+    <div class="options">
+      <label><input type="radio" name="q57" value="A" onclick="checkAnswer('q57','C')"> A) breezy</label>
+      <label><input type="radio" name="q57" value="B" onclick="checkAnswer('q57','C')"> B) gush</label>
+      <label><input type="radio" name="q57" value="C" onclick="checkAnswer('q57','C')"> C) violent</label>
+      <label><input type="radio" name="q57" value="D" onclick="checkAnswer('q57','C')"> D) soft</label>
+    </div>
+    <div id="result-q57" class="result"></div>
+  </div>
+
+  <!-- Q58 -->
+  <div class="question-card">
+    <div class="qnum"><b>58.</b> What is the superlative of 'inner'?</div>
+    <div class="options">
+      <label><input type="radio" name="q58" value="A" onclick="checkAnswer('q58','B')"> A) Innertest</label>
+      <label><input type="radio" name="q58" value="B" onclick="checkAnswer('q58','B')"> B) Innermost</label>
+      <label><input type="radio" name="q58" value="C" onclick="checkAnswer('q58','B')"> C) Innerst</label>
+      <label><input type="radio" name="q58" value="D" onclick="checkAnswer('q58','B')"> D) Innerest</label>
+    </div>
+    <div id="result-q58" class="result"></div>
+  </div>
+
+  <!-- Q59 -->
+  <div class="question-card">
+    <div class="qnum"><b>59.</b> Complete: "I will not buy ______ mangoes."</div>
+    <div class="options">
+      <label><input type="radio" name="q59" value="A" onclick="checkAnswer('q59','D')"> A) some</label>
+      <label><input type="radio" name="q59" value="B" onclick="checkAnswer('q59','D')"> B) every</label>
+      <label><input type="radio" name="q59" value="C" onclick="checkAnswer('q59','D')"> C) each</label>
+      <label><input type="radio" name="q59" value="D" onclick="checkAnswer('q59','D')"> D) any</label>
+    </div>
+    <div id="result-q59" class="result"></div>
+  </div>
+
+  <!-- Q60 -->
+  <div class="question-card">
+    <div class="qnum"><b>60.</b> Fill in the blank with the correct article: "I have only one-rupee note with me."</div>
+    <div class="options">
+      <label><input type="radio" name="q60" value="A" onclick="checkAnswer('q60','A')"> A) a</label>
+      <label><input type="radio" name="q60" value="B" onclick="checkAnswer('q60','A')"> B) an</label>
+      <label><input type="radio" name="q60" value="C" onclick="checkAnswer('q60','A')"> C) the</label>
+      <label><input type="radio" name="q60" value="D" onclick="checkAnswer('q60','A')"> D) None of the above</label>
+    </div>
+    <div id="result-q60" class="result"></div>
+  </div>
+
+  <!-- Q61 -->
+  <div class="question-card">
+    <div class="qnum"><b>61.</b> Fill in the blank with the correct pronoun: "You and Hari have idled away ______ time."</div>
+    <div class="options">
+      <label><input type="radio" name="q61" value="A" onclick="checkAnswer('q61','A')"> A) your</label>
+      <label><input type="radio" name="q61" value="B" onclick="checkAnswer('q61','A')"> B) their</label>
+      <label><input type="radio" name="q61" value="C" onclick="checkAnswer('q61','A')"> C) there</label>
+      <label><input type="radio" name="q61" value="D" onclick="checkAnswer('q61','A')"> D) those</label>
+    </div>
+    <div id="result-q61" class="result"></div>
+  </div>
+
+  <!-- Q62 -->
+  <div class="question-card">
+    <div class="qnum"><b>62.</b> Fill in the blank with correct verb: "The wounded man was helped by some boys ______."</div>
+    <div class="options">
+      <label><input type="radio" name="q62" value="A" onclick="checkAnswer('q62','C')"> A) readily</label>
+      <label><input type="radio" name="q62" value="B" onclick="checkAnswer('q62','C')"> B) being</label>
+      <label><input type="radio" name="q62" value="C" onclick="checkAnswer('q62','C')"> C) sympathetically</label>
+      <label><input type="radio" name="q62" value="D" onclick="checkAnswer('q62','C')"> D) affectionately</label>
+    </div>
+    <div id="result-q62" class="result"></div>
+  </div>
+
+  <!-- Q63 -->
+  <div class="question-card">
+    <div class="qnum"><b>63.</b> What is the past participle of 'wear'?</div>
+    <div class="options">
+      <label><input type="radio" name="q63" value="A" onclick="checkAnswer('q63','B')"> A) Wore</label>
+      <label><input type="radio" name="q63" value="B" onclick="checkAnswer('q63','B')"> B) Worn</label>
+      <label><input type="radio" name="q63" value="C" onclick="checkAnswer('q63','B')"> C) Wear</label>
+      <label><input type="radio" name="q63" value="D" onclick="checkAnswer('q63','B')"> D) Weared</label>
+    </div>
+    <div id="result-q63" class="result"></div>
+  </div>
+
+  <!-- Q64 -->
+  <div class="question-card">
+    <div class="qnum"><b>64.</b> Use the correct adverb: "He has ______ seen a tiger."</div>
+    <div class="options">
+      <label><input type="radio" name="q64" value="A" onclick="checkAnswer('q64','D')"> A) carefully</label>
+      <label><input type="radio" name="q64" value="B" onclick="checkAnswer('q64','D')"> B) heavily</label>
+      <label><input type="radio" name="q64" value="C" onclick="checkAnswer('q64','D')"> C) hard</label>
+      <label><input type="radio" name="q64" value="D" onclick="checkAnswer('q64','D')"> D) never</label>
+    </div>
+    <div id="result-q64" class="result"></div>
+  </div>
+
+  <!-- Q65 -->
+  <div class="question-card">
+    <div class="qnum"><b>65.</b> Fill in the blank with correct preposition: "He leaned ______ the wall and waited for me."</div>
+    <div class="options">
+      <label><input type="radio" name="q65" value="A" onclick="checkAnswer('q65','A')"> A) against</label>
+      <label><input type="radio" name="q65" value="B" onclick="checkAnswer('q65','A')"> B) on</label>
+      <label><input type="radio" name="q65" value="C" onclick="checkAnswer('q65','A')"> C) under</label>
+      <label><input type="radio" name="q65" value="D" onclick="checkAnswer('q65','A')"> D) between</label>
+    </div>
+    <div id="result-q65" class="result"></div>
+  </div>
+
+  <!-- Q66 -->
+  <div class="question-card">
+    <div class="qnum"><b>66.</b> What is the verb form of 'bath'?</div>
+    <div class="options">
+      <label><input type="radio" name="q66" value="A" onclick="checkAnswer('q66','B')"> A) Bath</label>
+      <label><input type="radio" name="q66" value="B" onclick="checkAnswer('q66','B')"> B) Bathe</label>
+      <label><input type="radio" name="q66" value="C" onclick="checkAnswer('q66','B')"> C) Baths</label>
+      <label><input type="radio" name="q66" value="D" onclick="checkAnswer('q66','B')"> D) Bath's</label>
+    </div>
+    <div id="result-q66" class="result"></div>
+  </div>
+
+  <!-- Q67 -->
+  <div class="question-card">
+    <div class="qnum"><b>67.</b> What is the diminutive form of hill?</div>
+    <div class="options">
+      <label><input type="radio" name="q67" value="A" onclick="checkAnswer('q67','C')"> A) Hillet</label>
+      <label><input type="radio" name="q67" value="B" onclick="checkAnswer('q67','C')"> B) Hill-ling</label>
+      <label><input type="radio" name="q67" value="C" onclick="checkAnswer('q67','C')"> C) Hillock</label>
+      <label><input type="radio" name="q67" value="D" onclick="checkAnswer('q67','C')"> D) Hilly</label>
+    </div>
+    <div id="result-q67" class="result"></div>
+  </div>
+
+  <!-- Q68 -->
+  <div class="question-card">
+    <div class="qnum"><b>68.</b> Use the correct option to complete the following phrase: "from ______ to worse"</div>
+    <div class="options">
+      <label><input type="radio" name="q68" value="A" onclick="checkAnswer('q68','D')"> A) worst</label>
+      <label><input type="radio" name="q68" value="B" onclick="checkAnswer('q68','D')"> B) best</label>
+      <label><input type="radio" name="q68" value="C" onclick="checkAnswer('q68','D')"> C) better</label>
+      <label><input type="radio" name="q68" value="D" onclick="checkAnswer('q68','D')"> D) bad</label>
+    </div>
+    <div id="result-q68" class="result"></div>
+  </div>
+
+  <!-- Q69 -->
+  <div class="question-card">
+    <div class="qnum"><b>69.</b> What is the meaning of the idiom 'turn deaf ear to'?</div>
+    <div class="options">
+      <label><input type="radio" name="q69" value="A" onclick="checkAnswer('q69','A')"> A) Disregard</label>
+      <label><input type="radio" name="q69" value="B" onclick="checkAnswer('q69','A')"> B) Disrespect</label>
+      <label><input type="radio" name="q69" value="C" onclick="checkAnswer('q69','A')"> C) Disdain</label>
+      <label><input type="radio" name="q69" value="D" onclick="checkAnswer('q69','A')"> D) Distract</label>
+    </div>
+    <div id="result-q69" class="result"></div>
+  </div>
+
+  <!-- Q70 -->
+  <div class="question-card">
+    <div class="qnum"><b>70.</b> Complete the proverb: "No ______, no gains"</div>
+    <div class="options">
+      <label><input type="radio" name="q70" value="A" onclick="checkAnswer('q70','C')"> A) money</label>
+      <label><input type="radio" name="q70" value="B" onclick="checkAnswer('q70','C')"> B) capital</label>
+      <label><input type="radio" name="q70" value="C" onclick="checkAnswer('q70','C')"> C) pains</label>
+      <label><input type="radio" name="q70" value="D" onclick="checkAnswer('q70','C')"> D) risk</label>
+    </div>
+    <div id="result-q70" class="result"></div>
+  </div>
+
+  <!-- Q71 -->
+  <div class="question-card">
+    <div class="qnum"><b>71.</b> What is the past tense of 'bite'?</div>
+    <div class="options">
+      <label><input type="radio" name="q71" value="A" onclick="checkAnswer('q71','A')"> A) Bit</label>
+      <label><input type="radio" name="q71" value="B" onclick="checkAnswer('q71','A')"> B) Bite</label>
+      <label><input type="radio" name="q71" value="C" onclick="checkAnswer('q71','A')"> C) Bitten</label>
+      <label><input type="radio" name="q71" value="D" onclick="checkAnswer('q71','A')"> D) Bought</label>
+    </div>
+    <div id="result-q71" class="result"></div>
+  </div>
+
+  <!-- Q72 -->
+  <div class="question-card">
+    <div class="qnum"><b>72.</b> What is a single word for the phrase 'in spite of'?</div>
+    <div class="options">
+      <label><input type="radio" name="q72" value="A" onclick="checkAnswer('q72','A')"> A) Notwithstanding</label>
+      <label><input type="radio" name="q72" value="B" onclick="checkAnswer('q72','A')"> B) Barring</label>
+      <label><input type="radio" name="q72" value="C" onclick="checkAnswer('q72','A')"> C) Considering</label>
+      <label><input type="radio" name="q72" value="D" onclick="checkAnswer('q72','A')"> D) Pending</label>
+    </div>
+    <div id="result-q72" class="result"></div>
+  </div>
+
+  <!-- Q73 -->
+  <div class="question-card">
+    <div class="qnum"><b>73.</b> What is a group of sheep known as?</div>
+    <div class="options">
+      <label><input type="radio" name="q73" value="A" onclick="checkAnswer('q73','B')"> A) Crowd</label>
+      <label><input type="radio" name="q73" value="B" onclick="checkAnswer('q73','B')"> B) Flock</label>
+      <label><input type="radio" name="q73" value="C" onclick="checkAnswer('q73','B')"> C) Herd</label>
+      <label><input type="radio" name="q73" value="D" onclick="checkAnswer('q73','B')"> D) Army</label>
+    </div>
+    <div id="result-q73" class="result"></div>
+  </div>
+
+  <!-- Q74 -->
+  <div class="question-card">
+    <div class="qnum"><b>74.</b> What is the opposite gender of Wizard?</div>
+    <div class="options">
+      <label><input type="radio" name="q74" value="A" onclick="checkAnswer('q74','D')"> A) Bachelor</label>
+      <label><input type="radio" name="q74" value="B" onclick="checkAnswer('q74','D')"> B) Weaver</label>
+      <label><input type="radio" name="q74" value="C" onclick="checkAnswer('q74','D')"> C) Widower</label>
+      <label><input type="radio" name="q74" value="D" onclick="checkAnswer('q74','D')"> D) Witch</label>
+    </div>
+    <div id="result-q74" class="result"></div>
+  </div>
+
+  <!-- Q75 -->
+  <div class="question-card">
+    <div class="qnum"><b>75.</b> What is the plural of 'Commander in chief'?</div>
+    <div class="options">
+      <label><input type="radio" name="q75" value="A" onclick="checkAnswer('q75','C')"> A) Commander in chiefs</label>
+      <label><input type="radio" name="q75" value="B" onclick="checkAnswer('q75','C')"> B) Commander in chieves</label>
+      <label><input type="radio" name="q75" value="C" onclick="checkAnswer('q75','C')"> C) Commanders in chief</label>
+      <label><input type="radio" name="q75" value="D" onclick="checkAnswer('q75','C')"> D) Commanders in chiefs</label>
+    </div>
+    <div id="result-q75" class="result"></div>
+  </div>
+
+  <!-- Q76 -->
+  <div class="question-card">
+    <div class="qnum"><b>76.</b> Simplify: 2 − 3 1/7 − 3 3/7 (as in the booklet)</div>
+    <div class="options">
+      <label><input type="radio" name="q76" value="A" onclick="checkAnswer('q76','A')"> A) −5</label>
+      <label><input type="radio" name="q76" value="B" onclick="checkAnswer('q76','A')"> B) −4</label>
+      <label><input type="radio" name="q76" value="C" onclick="checkAnswer('q76','A')"> C) −6</label>
+      <label><input type="radio" name="q76" value="D" onclick="checkAnswer('q76','A')"> D) −3</label>
+    </div>
+    <div id="result-q76" class="result"></div>
+  </div>
+
+  <!-- Q77 -->
+  <div class="question-card">
+    <div class="qnum"><b>77.</b> What should be added to twice the rational number 1/21 to get 3/74?</div>
+    <div class="options">
+      <label><input type="radio" name="q77" value="A" onclick="checkAnswer('q77','D')"> A) 107/74</label>
+      <label><input type="radio" name="q77" value="B" onclick="checkAnswer('q77','D')"> B) 74/107</label>
+      <label><input type="radio" name="q77" value="C" onclick="checkAnswer('q77','D')"> C) 107/21</label>
+      <label><input type="radio" name="q77" value="D" onclick="checkAnswer('q77','D')"> D) 21/74</label>
+    </div>
+    <div id="result-q77" class="result"></div>
+  </div>
+
+  <!-- Q78 -->
+  <div class="question-card">
+    <div class="qnum"><b>78.</b> The sum of three consecutive multiples of 11 is 363. What is the middle term?</div>
+    <div class="options">
+      <label><input type="radio" name="q78" value="A" onclick="checkAnswer('q78','B')"> A) 110</label>
+      <label><input type="radio" name="q78" value="B" onclick="checkAnswer('q78','B')"> B) 121</label>
+      <label><input type="radio" name="q78" value="C" onclick="checkAnswer('q78','B')"> C) 132</label>
+      <label><input type="radio" name="q78" value="D" onclick="checkAnswer('q78','B')"> D) 143</label>
+    </div>
+    <div id="result-q78" class="result"></div>
+  </div>
+
+  <!-- Q79 -->
+  <div class="question-card">
+    <div class="qnum"><b>79.</b> Bunnai has 3 times as many two-rupee coins as five-rupee coins. If total sum is ₹77, how many two-rupee coins does he have?</div>
+    <div class="options">
+      <label><input type="radio" name="q79" value="A" onclick="checkAnswer('q79','A')"> A) 21</label>
+      <label><input type="radio" name="q79" value="B" onclick="checkAnswer('q79','A')"> B) 18</label>
+      <label><input type="radio" name="q79" value="C" onclick="checkAnswer('q79','A')"> C) 34</label>
+      <label><input type="radio" name="q79" value="D" onclick="checkAnswer('q79','A')"> D) 12</label>
+    </div>
+    <div id="result-q79" class="result"></div>
+  </div>
+
+  <!-- Q80 -->
+  <div class="question-card">
+    <div class="qnum"><b>80.</b> The digits of a two-digit number differ by 3. If the digits are interchanged and the resulting number is added to the original number, we get 143. What is the original number?</div>
+    <div class="options">
+      <label><input type="radio" name="q80" value="A" onclick="checkAnswer('q80','C')"> A) 63</label>
+      <label><input type="radio" name="q80" value="B" onclick="checkAnswer('q80','C')"> B) 96</label>
+      <label><input type="radio" name="q80" value="C" onclick="checkAnswer('q80','C')"> C) 69</label>
+      <label><input type="radio" name="q80" value="D" onclick="checkAnswer('q80','C')"> D) 85</label>
+    </div>
+    <div id="result-q80" class="result"></div>
+  </div>
+
+  <!-- Q81 -->
+  <div class="question-card">
+    <div class="qnum"><b>81.</b> Arjun is twice as old as Shriya. Five years ago, his age was three times Shriya's age. What is Arjun's present age?</div>
+    <div class="options">
+      <label><input type="radio" name="q81" value="A" onclick="checkAnswer('q81','B')"> A) 20 years</label>
+      <label><input type="radio" name="q81" value="B" onclick="checkAnswer('q81','B')"> B) 30 years</label>
+      <label><input type="radio" name="q81" value="C" onclick="checkAnswer('q81','B')"> C) 40 years</label>
+      <label><input type="radio" name="q81" value="D" onclick="checkAnswer('q81','B')"> D) 50 years</label>
+    </div>
+    <div id="result-q81" class="result"></div>
+  </div>
+
+  <!-- Q82 -->
+  <div class="question-card">
+    <div class="qnum"><b>82.</b> The value of x in the equation x − 3 = 5 is:</div>
+    <div class="options">
+      <label><input type="radio" name="q82" value="A" onclick="checkAnswer('q82','C')"> A) 5</label>
+      <label><input type="radio" name="q82" value="B" onclick="checkAnswer('q82','C')"> B) 1</label>
+      <label><input type="radio" name="q82" value="C" onclick="checkAnswer('q82','C')"> C) 8</label>
+      <label><input type="radio" name="q82" value="D" onclick="checkAnswer('q82','C')"> D) 3</label>
+    </div>
+    <div id="result-q82" class="result"></div>
+  </div>
+
+  <!-- Q83 -->
+  <div class="question-card">
+    <div class="qnum"><b>83.</b> Find the number of sides of a regular polygon whose each exterior angle has a measure of 45°.</div>
+    <div class="options">
+      <label><input type="radio" name="q83" value="A" onclick="checkAnswer('q83','C')"> A) 6</label>
+      <label><input type="radio" name="q83" value="B" onclick="checkAnswer('q83','C')"> B) 2</label>
+      <label><input type="radio" name="q83" value="C" onclick="checkAnswer('q83','C')"> C) 8</label>
+      <label><input type="radio" name="q83" value="D" onclick="checkAnswer('q83','C')"> D) 17</label>
+    </div>
+    <div id="result-q83" class="result"></div>
+  </div>
+
+  <!-- Q84 -->
+  <div class="question-card">
+    <div class="qnum"><b>84.</b> Which of the following numbers is a perfect square?</div>
+    <div class="options">
+      <label><input type="radio" name="q84" value="A" onclick="checkAnswer('q84','C')"> A) 1057</label>
+      <label><input type="radio" name="q84" value="B" onclick="checkAnswer('q84','C')"> B) 23453</label>
+      <label><input type="radio" name="q84" value="C" onclick="checkAnswer('q84','C')"> C) 7921</label>
+      <label><input type="radio" name="q84" value="D" onclick="checkAnswer('q84','C')"> D) 222222</label>
+    </div>
+    <div id="result-q84" class="result"></div>
+  </div>
+
+  <!-- Q85 -->
+  <div class="question-card">
+    <div class="qnum"><b>85.</b> In a right triangle, the length of the hypotenuse and a side are respectively 5 cm and 3 cm. What is the length of the remaining side?</div>
+    <div class="options">
+      <label><input type="radio" name="q85" value="A" onclick="checkAnswer('q85','B')"> A) 2 cm</label>
+      <label><input type="radio" name="q85" value="B" onclick="checkAnswer('q85','B')"> B) 4 cm</label>
+      <label><input type="radio" name="q85" value="C" onclick="checkAnswer('q85','B')"> C) 8 cm</label>
+      <label><input type="radio" name="q85" value="D" onclick="checkAnswer('q85','B')"> D) None</label>
+    </div>
+    <div id="result-q85" class="result"></div>
+  </div>
+
+  <!-- Q86 -->
+  <div class="question-card">
+    <div class="qnum"><b>86.</b> By which smallest natural number should 53240 be divided so that the quotient is a perfect cube?</div>
+    <div class="options">
+      <label><input type="radio" name="q86" value="A" onclick="checkAnswer('q86','A')"> A) 2</label>
+      <label><input type="radio" name="q86" value="B" onclick="checkAnswer('q86','A')"> B) 1</label>
+      <label><input type="radio" name="q86" value="C" onclick="checkAnswer('q86','A')"> C) 3</label>
+      <label><input type="radio" name="q86" value="D" onclick="checkAnswer('q86','A')"> D) 4</label>
+    </div>
+    <div id="result-q86" class="result"></div>
+  </div>
+
+  <!-- Q87 -->
+  <div class="question-card">
+    <div class="qnum"><b>87.</b> An item marked at ₹840 is sold for ₹714. What is the discount percentage?</div>
+    <div class="options">
+      <label><input type="radio" name="q87" value="A" onclick="checkAnswer('q87','C')"> A) 10%</label>
+      <label><input type="radio" name="q87" value="B" onclick="checkAnswer('q87','C')"> B) 12%</label>
+      <label><input type="radio" name="q87" value="C" onclick="checkAnswer('q87','C')"> C) 15%</label>
+      <label><input type="radio" name="q87" value="D" onclick="checkAnswer('q87','C')"> D) 18%</label>
+    </div>
+    <div id="result-q87" class="result"></div>
+  </div>
+
+  <!-- Q88 -->
+  <div class="question-card">
+    <div class="qnum"><b>88.</b> Sohan bought a second-hand refrigerator for ₹2,500, then spent ₹500 on repairs and sold it for ₹3,300. Find his profit or loss percent.</div>
+    <div class="options">
+      <label><input type="radio" name="q88" value="A" onclick="checkAnswer('q88','B')"> A) Loss 10%</label>
+      <label><input type="radio" name="q88" value="B" onclick="checkAnswer('q88','B')"> B) Profit 10%</label>
+      <label><input type="radio" name="q88" value="C" onclick="checkAnswer('q88','B')"> C) Loss 12%</label>
+      <label><input type="radio" name="q88" value="D" onclick="checkAnswer('q88','B')"> D) Profit 12%</label>
+    </div>
+    <div id="result-q88" class="result"></div>
+  </div>
+
+  <!-- Q89 -->
+  <div class="question-card">
+    <div class="qnum"><b>89.</b> A sum of ₹10,000 is borrowed at a rate of interest 15% per annum for 2 years. What will be the simple interest on this sum at the end of 2 years?</div>
+    <div class="options">
+      <label><input type="radio" name="q89" value="A" onclick="checkAnswer('q89','C')"> A) ₹1,500</label>
+      <label><input type="radio" name="q89" value="B" onclick="checkAnswer('q89','C')"> B) ₹2,400</label>
+      <label><input type="radio" name="q89" value="C" onclick="checkAnswer('q89','C')"> C) ₹3,000</label>
+      <label><input type="radio" name="q89" value="D" onclick="checkAnswer('q89','C')"> D) ₹3,500</label>
+    </div>
+    <div id="result-q89" class="result"></div>
+  </div>
+
+  <!-- Q90 -->
+  <div class="question-card">
+    <div class="qnum"><b>90.</b> Subtracting (5x² − 4y² + 6y − 3) from (7x − 4xy + 8y + 5x − 3y) gives:</div>
+    <div class="options">
+      <label><input type="radio" name="q90" value="A" onclick="checkAnswer('q90','D')"> A) 2x² − 4xy + 12y² − 9y + 3</label>
+      <label><input type="radio" name="q90" value="B" onclick="checkAnswer('q90','D')"> B) 2x² − 4xy + 4y² + 5x − 9y + 3</label>
+      <label><input type="radio" name="q90" value="C" onclick="checkAnswer('q90','D')"> C) 2x² + 12y² + 5x − 9y + 3</label>
+      <label><input type="radio" name="q90" value="D" onclick="checkAnswer('q90','D')"> D) 2x² − 4xy + 5x − 9y + 3</label>
+    </div>
+    <div id="result-q90" class="result"></div>
+  </div>
+
+  <!-- Q91 -->
+  <div class="question-card">
+    <div class="qnum"><b>91.</b> What is the value of 3y(2y − 7) − 3(y − 4) − 63 if y = −2?</div>
+    <div class="options">
+      <label><input type="radio" name="q91" value="A" onclick="checkAnswer('q91','A')"> A) 21</label>
+      <label><input type="radio" name="q91" value="B" onclick="checkAnswer('q91','A')"> B) −51</label>
+      <label><input type="radio" name="q91" value="C" onclick="checkAnswer('q91','A')"> C) 37</label>
+      <label><input type="radio" name="q91" value="D" onclick="checkAnswer('q91','A')"> D) −43</label>
+    </div>
+    <div id="result-q91" class="result"></div>
+  </div>
+
+  <!-- Q92 -->
+  <div class="question-card">
+    <div class="qnum"><b>92.</b> The perimeter of a parallelogram with sides of 7 cm and 12 cm length is:</div>
+    <div class="options">
+      <label><input type="radio" name="q92" value="A" onclick="checkAnswer('q92','B')"> A) 84 cm</label>
+      <label><input type="radio" name="q92" value="B" onclick="checkAnswer('q92','B')"> B) 38 cm</label>
+      <label><input type="radio" name="q92" value="C" onclick="checkAnswer('q92','B')"> C) 64 cm</label>
+      <label><input type="radio" name="q92" value="D" onclick="checkAnswer('q92','B')"> D) 10 cm</label>
+    </div>
+    <div id="result-q92" class="result"></div>
+  </div>
+
+  <!-- Q93 -->
+  <div class="question-card">
+    <div class="qnum"><b>93.</b> Which of the following about a parallelogram is true?</div>
+    <div class="options">
+      <label><input type="radio" name="q93" value="A" onclick="checkAnswer('q93','B')"> A) All internal angles are equal</label>
+      <label><input type="radio" name="q93" value="B" onclick="checkAnswer('q93','B')"> B) Diagonals bisect one another</label>
+      <label><input type="radio" name="q93" value="C" onclick="checkAnswer('q93','B')"> C) Parallel sides intersect each other</label>
+      <label><input type="radio" name="q93" value="D" onclick="checkAnswer('q93','B')"> D) One of the angles is always right angle</label>
+    </div>
+    <div id="result-q93" class="result"></div>
+  </div>
+
+  <!-- Q94 -->
+  <div class="question-card">
+    <div class="qnum"><b>94.</b> The area of a trapezium-shaped field is 480 m², the distance between two parallel sides is 15 m and length of one of the parallel sides is 20 m. What is the length of the other parallel side?</div>
+    <div class="options">
+      <label><input type="radio" name="q94" value="A" onclick="checkAnswer('q94','A')"> A) 44 m</label>
+      <label><input type="radio" name="q94" value="B" onclick="checkAnswer('q94','A')"> B) 32 m</label>
+      <label><input type="radio" name="q94" value="C" onclick="checkAnswer('q94','A')"> C) 20 m</label>
+      <label><input type="radio" name="q94" value="D" onclick="checkAnswer('q94','A')"> D) 30 m</label>
+    </div>
+    <div id="result-q94" class="result"></div>
+  </div>
+
+  <!-- Q95 -->
+  <div class="question-card">
+    <div class="qnum"><b>95.</b> The area of a rhombus is 240 cm² and one of the diagonals is 16 cm. The length of the other diagonal is:</div>
+    <div class="options">
+      <label><input type="radio" name="q95" value="A" onclick="checkAnswer('q95','C')"> A) 8 cm</label>
+      <label><input type="radio" name="q95" value="B" onclick="checkAnswer('q95','C')"> B) 16 cm</label>
+      <label><input type="radio" name="q95" value="C" onclick="checkAnswer('q95','C')"> C) 30 cm</label>
+      <label><input type="radio" name="q95" value="D" onclick="checkAnswer('q95','C')"> D) 32 cm</label>
+    </div>
+    <div id="result-q95" class="result"></div>
+  </div>
+
+  <!-- Q96 -->
+  <div class="question-card">
+    <div class="qnum"><b>96.</b> An aquarium is in the form of a cuboid whose external measures (length × breadth × height) are 80 cm × 30 cm × 40 cm. The base, side faces and back face are to be covered with a coloured paper. What will be the area of the paper needed?</div>
+    <div class="options">
+      <label><input type="radio" name="q96" value="A" onclick="checkAnswer('q96','C')"> A) 3000 cm²</label>
+      <label><input type="radio" name="q96" value="B" onclick="checkAnswer('q96','C')"> B) 4000 cm²</label>
+      <label><input type="radio" name="q96" value="C" onclick="checkAnswer('q96','C')"> C) 8000 cm²</label>
+      <label><input type="radio" name="q96" value="D" onclick="checkAnswer('q96','C')"> D) 9000 cm²</label>
+    </div>
+    <div id="result-q96" class="result"></div>
+  </div>
+
+  <!-- Q97 -->
+  <div class="question-card">
+    <div class="qnum"><b>97.</b> Find the height of a cylinder whose radius is 7 cm and the total surface area is 968 cm².</div>
+    <div class="options">
+      <label><input type="radio" name="q97" value="A" onclick="checkAnswer('q97','A')"> A) 15 cm</label>
+      <label><input type="radio" name="q97" value="B" onclick="checkAnswer('q97','A')"> B) 17 cm</label>
+      <label><input type="radio" name="q97" value="C" onclick="checkAnswer('q97','A')"> C) 19 cm</label>
+      <label><input type="radio" name="q97" value="D" onclick="checkAnswer('q97','A')"> D) 21 cm</label>
+    </div>
+    <div id="result-q97" class="result"></div>
+  </div>
+
+  <!-- Q98 -->
+  <div class="question-card">
+    <div class="qnum"><b>98.</b> Simplify (placeholder from booklet - presented here as an option set)</div>
+    <div class="options">
+      <label><input type="radio" name="q98" value="A" onclick="checkAnswer('q98','A')"> A) 16</label>
+      <label><input type="radio" name="q98" value="B" onclick="checkAnswer('q98','A')"> B) 9</label>
+      <label><input type="radio" name="q98" value="C" onclick="checkAnswer('q98','A')"> C) 4</label>
+      <label><input type="radio" name="q98" value="D" onclick="checkAnswer('q98','A')"> D) 8</label>
+    </div>
+    <div id="result-q98" class="result"></div>
+  </div>
+
+  <!-- Q99 -->
+  <div class="question-card">
+    <div class="qnum"><b>99.</b> Mass of earth is 5.97×10^24 kg and mass of moon is 7.35×10^22 kg. What is the total mass?</div>
+    <div class="options">
+      <label><input type="radio" name="q99" value="A" onclick="checkAnswer('q99','B')"> A) 60.35×10^22 kg</label>
+      <label><input type="radio" name="q99" value="B" onclick="checkAnswer('q99','B')"> B) 6.0435×10^24 kg</label>
+      <label><input type="radio" name="q99" value="C" onclick="checkAnswer('q99','B')"> C) 604.35×10^20 kg</label>
+      <label><input type="radio" name="q99" value="D" onclick="checkAnswer('q99','B')"> D) 6.0435×10^25 kg</label>
+    </div>
+    <div id="result-q99" class="result"></div>
+  </div>
+
+  <!-- Q100 -->
+  <div class="question-card">
+    <div class="qnum"><b>100.</b> (Original booklet question 100 was incomplete in the provided text.)</div>
+    <div class="options">
+      <label><input type="radio" name="q100" value="A" onclick="checkAnswer('q100','D')"> A) Option A</label>
+      <label><input type="radio" name="q100" value="B" onclick="checkAnswer('q100','D')"> B) Option B</label>
+      <label><input type="radio" name="q100" value="C" onclick="checkAnswer('q100','D')"> C) Option C</label>
+      <label><input type="radio" name="q100" value="D" onclick="checkAnswer('q100','D')"> D) (Refer original paper)</label>
+    </div>
+    <div id="result-q100" class="result"></div>
+  </div>
+
+  <small class="hint">Tip: open this file in Chrome/Firefox. Clicking an option immediately shows whether it's correct.</small>
+</div>
+
+<script>
+  function checkAnswer(question, correct) {
+    const radios = document.getElementsByName(question);
+    let selected = null;
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked) { selected = radios[i].value; break; }
+    }
+    const resultDiv = document.getElementById('result-' + question);
+    if (!resultDiv) return;
+    if (selected === correct) {
+      resultDiv.textContent = 'Correct!';
+      resultDiv.className = 'result correct';
+    } else {
+      resultDiv.textContent = 'Wrong!';
+      resultDiv.className = 'result wrong';
+    }
+  }
+</script>
+</body>
+</html>
